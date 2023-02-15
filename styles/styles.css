@@ -15,6 +15,11 @@
 
     /* Dividers */
     --light-gray-blue: hsl(240, 5%, 91%);
+
+
+    /* Calculations */
+    --question-padding-top-btm: 2rem;
+    --header-margin-btm: calc(3.8rem - var(--question-padding-top-btm));
 }
 
 * {
@@ -30,11 +35,13 @@ html {
 
 body {
     background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    background-repeat: no-repeat;
     font-family: 'Kumbh Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
 }
 
 
@@ -43,9 +50,10 @@ body {
 */
 
 #card-container {
+    position: relative;
     background-color: white;
     max-width: 32.7rem;
-    padding: 0 2.4rem 4.8rem 2.4rem;
+    padding: 13.2rem 2.4rem 4.8rem 2.4rem;
     border-radius: 2.3rem;
 }
 
@@ -59,24 +67,35 @@ let's try it first xD
 
 */
 .illustration {
+    /*
     position: relative;
-    top: 2.5rem;
-    
+    top: -10.9rem;
+    margin: auto;
+    */
+    position: absolute;
+    top: -11rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     width: 23.7rem;
+    height: 18rem;
+    border: 1px solid red;
 }
 
-.header {
+.faq__header {
     text-align: center;
     font-size: 3.2rem;
     font-weight: 700;
     margin: 0;
+    margin-bottom: var(--header-margin-btm);
 }
 
-.parent {
+.faq__parent {
     border-bottom: 1px solid var(--light-gray-blue);
+    width: 27.9rem;
 }
 
-.question {
+.faq-question {
     font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
@@ -88,8 +107,8 @@ let's try it first xD
     border: none;
 }
 
-.answer {
-    font-size: 1.2rem;
+.faq-answer {
+    display: none;
     line-height: 1.8rem;
     padding-bottom: 1.6rem;
 }
