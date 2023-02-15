@@ -37,12 +37,6 @@ body {
     align-items: center;
 }
 
-.divider {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: var(--light-gray-blue);
-}
 
 /* 
     ==================== MOBILE DESIGN ====================
@@ -56,16 +50,21 @@ body {
 }
 
 .illustration {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 2.5rem;
+    
     width: 23.7rem;
-    margin: auto;
 }
 
 .header {
     text-align: center;
     font-size: 3.2rem;
     font-weight: 700;
+    margin: 0;
+}
+
+.parent {
+    border-bottom: 1px solid var(--light-gray-blue);
 }
 
 .question {
@@ -75,11 +74,15 @@ body {
     align-items: center;
     width: 100%;
     line-height: 1.6rem;
+    padding: 2rem 0;
+    background-color: transparent;
+    border: none;
 }
 
 .answer {
     font-size: 1.2rem;
     line-height: 1.8rem;
+    padding-bottom: 1.6rem;
 }
 
 
