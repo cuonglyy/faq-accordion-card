@@ -1,0 +1,70 @@
+:root {
+    /*
+        ====== COLORS ======
+    */
+
+    /* Text */
+    --xdark-desat-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --xdark-gray-blue: hsl(237, 12%, 33%);
+    --dark-gray-blue: hsl(240, 6%, 50%);
+
+    /* Gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Dividers */
+    --light-gray-blue: hsl(240, 5%, 91%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--light-gray-blue);
+}
+
+/* 
+    ==================== MOBILE DESIGN ====================
+*/
+
+#card-container {
+    background-color: white;
+    max-width: 32.7rem;
+}
+
+
+
+/*
+    ========== FOOTER ==========
+*/
+footer { 
+    font-size: 11px; 
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%);
+}
