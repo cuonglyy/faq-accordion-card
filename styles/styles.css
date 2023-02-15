@@ -49,6 +49,15 @@ body {
     border-radius: 2.3rem;
 }
 
+
+/* 
+
+absolute position might not work since it wont be responsive with user interaction
+Ex. clicking on a button, making the container a lil larger
+let's try it first xD
+
+
+*/
 .illustration {
     position: relative;
     top: 2.5rem;
