@@ -90,7 +90,7 @@ body {
     width: 27.9rem;
 }
 
-.faq-question {
+.faq-question__btn {
     font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
@@ -100,9 +100,22 @@ body {
     padding: 2rem 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
-.faq-answer {
+.faq-question__btn:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.faq-question__btn.active {
+    font-weight: 700;
+}
+
+.arrow-icon.active {
+    transform: scaleY(-1);
+}
+
+.faq-answer__text {
     display: none;
     line-height: 1.8rem;
     padding-bottom: 1.6rem;
