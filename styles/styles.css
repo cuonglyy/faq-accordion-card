@@ -57,15 +57,6 @@ body {
     border-radius: 2.3rem;
 }
 
-
-/* 
-
-absolute position might not work since it wont be responsive with user interaction
-Ex. clicking on a button, making the container a lil larger
-let's try it first xD
-
-
-*/
 .illustration {
     /*
     position: relative;
@@ -73,13 +64,17 @@ let's try it first xD
     margin: auto;
     */
     position: absolute;
-    top: -11rem;
+    top: -10.8rem;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 23.7rem;
     height: 18rem;
-    border: 1px solid red;
+}
+
+.illustration-background__img {
+    position: relative;
+    top: -7.5rem;
 }
 
 .faq__header {
