@@ -101,6 +101,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: var(--xdark-gray-blue);
 }
 
 .faq-question__btn:hover {
@@ -109,6 +110,11 @@ body {
 
 .faq-question__btn.active {
     font-weight: 700;
+    color: var(--xdark-desat-blue);
+}
+
+.arrow-icon {
+    pointer-events: none;
 }
 
 .arrow-icon.active {
@@ -119,6 +125,7 @@ body {
     display: none;
     line-height: 1.8rem;
     padding-bottom: 1.6rem;
+    color: var(--dark-gray-blue)
 }
 
 
@@ -130,6 +137,7 @@ footer {
     position: absolute;
     bottom: 0;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 footer a { 
