@@ -143,3 +143,35 @@ footer {
 footer a { 
     color: hsl(228, 45%, 44%);
 }
+
+
+
+/*
+    ==================== DESKTOP DESIGN ====================
+*/
+@media screen and (min-width: 680px) {
+    #card-container {
+        width: 100%;
+        max-width: 92rem;
+        padding: 6.5rem 9.5rem 8.3rem 47.5rem;
+    }
+    
+    .faq-container {
+        width: 35rem;
+    }
+
+    .faq__header {
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    .faq__parent {
+        width: 100%;
+    }
+
+    .faq-question__btn {
+        font-size: 1.4rem;
+    }
+
+
+}
