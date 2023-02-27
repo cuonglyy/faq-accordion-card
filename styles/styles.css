@@ -84,7 +84,7 @@ body {
     top: -1.6rem;
 }
 
-.illustration__box {
+.illustration-box {
     display: none;
 }
 
@@ -175,10 +175,10 @@ footer a {
     .faq-container {
         width: 35rem;
         margin: 6.5rem 9.5rem 8.4rem 0;
+        overflow: hidden;
     }
 
     .illustration {
-        background-image: url(../images/bg-pattern-desktop.svg);
         position: relative;
         overflow: hidden;
         height: 100%;
@@ -187,16 +187,33 @@ footer a {
     .illustration__img {
         position: relative;
         background-image: url(../images/illustration-woman-online-desktop.svg);
+        background-position: -8.8rem;
         width: 47.2rem;
         height: 35.9rem;
-        top: 0;
+        top: -50;
+        transform: translateY(50%);
+        z-index: 1;
     }
 
     .illustration-background__img {
         background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: -58rem;
         position: absolute;
         width: 96.4rem;
         height: 94.4rem;
+        top: -29rem;
+    }
+
+    .illustration-box {
+        display: block;
+        background-image: url(../images/illustration-box-desktop.svg);
+        width: 9rem;
+        height: 10.6rem;
+        position: absolute;
+        z-index: 1;
+        background-position: center top;
+        top: 20.8rem;
+        left: -4.3rem;
     }
 
     .faq__header {
